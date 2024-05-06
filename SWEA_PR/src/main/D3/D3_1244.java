@@ -1,12 +1,11 @@
-package main.D2;
+package main.D3;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.StringTokenizer;
 
-public class D2_1244 {
+public class D3_1244 {
     private static int max = 0;
     private static ArrayList<String> nums = new ArrayList<>();
 
