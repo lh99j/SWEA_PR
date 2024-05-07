@@ -29,22 +29,10 @@ public class D3_1860 {
 
             Collections.sort(times);
 
-            int[] timeTable = new int[times.get(times.size() - 1) + 1];
-
-            Arrays.fill(timeTable, 0);
-
-            for(int i = 1; i < timeTable.length; i++){
-                timeTable[i] = (i / M) * K;
-            }
-
             for(int i = 0; i < times.size(); i++){
-                int value = times.get(i);
+                int total = (times.get(i) / M) * K;
 
-                for(int j = value; j < timeTable.length; j++){
-                    timeTable[j]--;
-                }
-
-                if(timeTable[value] < 0){
+                if(total - i - 1 < 0){
                     ans = "Impossible";
                     break;
                 }
